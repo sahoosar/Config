@@ -10,6 +10,7 @@ pipeline {
    stage('Clean Workspace') {
       steps {
        // cleanWs()
+       echo 'clean'
       }
     }
 
