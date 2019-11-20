@@ -4,8 +4,7 @@ pipeline {
       timeout(time: 1, unit: 'HOURS') 
   }
   parameters {
-    gitParameter branchFilter: 'origin/(.*)', defaultValue: 'master', name: 'BRANCH_SELECTOR', type: 'PT_BRANCH', useRepository: '.*CI.git'
-  }
+    gitParameter branchFilter: 'origin/(.*)', defaultValue: 'master', name: 'BRANCH_SELECTOR', type: 'PT_BRANCH'  }
   stages {
    stage('Clean Workspace') {
       steps {
